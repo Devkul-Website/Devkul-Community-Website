@@ -1,2 +1,1 @@
-# Devkul
-Main Website
+# Devkul-Community
