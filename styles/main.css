@@ -107,4 +107,13 @@ header nav ul li a {
   position: absolute;
   width: 3em;
   bottom: 1.5em;
+  animation: moveArrow 1s alternate-reverse infinite;
+}
+@keyframes moveArrow {
+  from {
+    transform: translateY(-8px);
+  }
+  to {
+    transform: translateY(10px);
+  }
 }/*# sourceMappingURL=main.css.map */

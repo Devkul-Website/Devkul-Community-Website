@@ -126,5 +126,17 @@ header {
     position: absolute;
     width: 3em;
     bottom: 1.5em;
+    animation: moveArrow 1s alternate-reverse infinite;
+
+    //DOWN ARROW
+    @keyframes moveArrow {
+      from {
+        transform: translateY(-8px);
+      }
+
+      to {
+        transform: translateY(10px);
+      }
+    }
   }
 }
