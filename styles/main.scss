@@ -1,0 +1,79 @@
+$black: #000;
+$white: #fff;
+$octo: 'Octosquare Condensed';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  background: $black;
+  color: $white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+// HEADER SECTION
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+
+  .logo {
+    width: 50px;
+  }
+
+  .open {
+    width: 45px;
+    align-self: flex-start;
+    margin-top: 0.125em;
+  }
+
+  nav {
+    background: $white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    z-index: 999;
+    text-transform: uppercase;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+
+    .close {
+      float: right;
+      margin: 1em 1em;
+      width: 40px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      padding: 8em 0 2.5em;
+
+      li {
+        text-align: center;
+
+        a {
+          font: 1.5rem $octo;
+          color: $black;
+          text-decoration: none;
+          line-height: 2.2;
+          letter-spacing: 0.08rem;
+        }
+      }
+    }
+  }
+}

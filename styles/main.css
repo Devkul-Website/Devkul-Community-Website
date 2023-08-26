@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+}
+header .logo {
+  width: 50px;
+}
+header .open {
+  width: 45px;
+  align-self: flex-start;
+  margin-top: 0.125em;
+}
+header nav {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  z-index: 999;
+  text-transform: uppercase;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+header nav .close {
+  float: right;
+  margin: 1em 1em;
+  width: 40px;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding: 8em 0 2.5em;
+}
+header nav ul li {
+  text-align: center;
+}
+header nav ul li a {
+  font: 1.5rem "Octosquare Condensed";
+  color: #000;
+  text-decoration: none;
+  line-height: 2.2;
+  letter-spacing: 0.08rem;
+}/*# sourceMappingURL=main.css.map */
