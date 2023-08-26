@@ -38,6 +38,7 @@ header {
     width: 3.5em;
     align-self: center;
     margin-top: -5px;
+    cursor: pointer;
   }
 
   nav {
@@ -56,27 +57,33 @@ header {
       float: right;
       margin: 1.35em 1em;
       width: 3.5em;
+      cursor: pointer;
     }
 
     ul {
       list-style: none;
       padding: 0;
       margin: 0;
-      padding: 8em 0 2.5em;
+      padding: 8.5em 0 2.5em;
 
       li {
         text-align: center;
 
         a {
-          font: 1.5rem $octo;
+          font: 1.6rem $octo;
           color: $black;
           text-decoration: none;
-          line-height: 2.2;
+          line-height: 2.5;
           letter-spacing: 0.08rem;
         }
       }
     }
   }
+}
+
+// JS OPEN MENU
+.open-nav {
+  transform: translateX(0%);
 }
 
 // MAIN SECTION
