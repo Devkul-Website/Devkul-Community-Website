@@ -1,5 +1,6 @@
 $black: #000;
 $white: #fff;
+$glamor: 'Glamor Bold';
 $octo: 'Octosquare Condensed';
 
 * {
@@ -30,13 +31,13 @@ header {
   padding: 1em 0;
 
   .logo {
-    width: 50px;
+    width: 5em;
   }
 
   .open {
-    width: 45px;
-    align-self: flex-start;
-    margin-top: 0.125em;
+    width: 3.5em;
+    align-self: center;
+    margin-top: -5px;
   }
 
   nav {
@@ -53,8 +54,8 @@ header {
 
     .close {
       float: right;
-      margin: 1em 1em;
-      width: 40px;
+      margin: 1.35em 1em;
+      width: 3.5em;
     }
 
     ul {
@@ -75,5 +76,48 @@ header {
         }
       }
     }
+  }
+}
+
+// MAIN SECTION
+.home-sect {
+  height: 80vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font: 5rem $glamor;
+    margin-bottom: 0;
+  }
+
+  p {
+    font: 2rem $octo;
+    line-height: 1.5;
+    margin-top: 0em;
+  }
+
+  .cta {
+    display: inline-block;
+    text-decoration: none;
+    font: 1.5rem $octo;
+    padding: 0.3em 1.8em;
+    border: 0.2rem solid $white;
+    color: $white;
+    margin-bottom: 6em;
+    transition: all 0.15s ease-in-out;
+
+    &:hover {
+      background: $white;
+      color: $black;
+    }
+  }
+
+  .down-arrow {
+    position: absolute;
+    width: 3em;
+    bottom: 1.5em;
   }
 }

@@ -25,12 +25,12 @@ header {
   padding: 1em 0;
 }
 header .logo {
-  width: 50px;
+  width: 5em;
 }
 header .open {
-  width: 45px;
-  align-self: flex-start;
-  margin-top: 0.125em;
+  width: 3.5em;
+  align-self: center;
+  margin-top: -5px;
 }
 header nav {
   background: #fff;
@@ -46,8 +46,8 @@ header nav {
 }
 header nav .close {
   float: right;
-  margin: 1em 1em;
-  width: 40px;
+  margin: 1.35em 1em;
+  width: 3.5em;
 }
 header nav ul {
   list-style: none;
@@ -64,4 +64,41 @@ header nav ul li a {
   text-decoration: none;
   line-height: 2.2;
   letter-spacing: 0.08rem;
+}
+
+.home-sect {
+  height: 80vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-sect h1 {
+  font: 5rem "Glamor Bold";
+  margin-bottom: 0;
+}
+.home-sect p {
+  font: 2rem "Octosquare Condensed";
+  line-height: 1.5;
+  margin-top: 0em;
+}
+.home-sect .cta {
+  display: inline-block;
+  text-decoration: none;
+  font: 1.5rem "Octosquare Condensed";
+  padding: 0.3em 1.8em;
+  border: 0.2rem solid #fff;
+  color: #fff;
+  margin-bottom: 6em;
+  transition: all 0.15s ease-in-out;
+}
+.home-sect .cta:hover {
+  background: #fff;
+  color: #000;
+}
+.home-sect .down-arrow {
+  position: absolute;
+  width: 3em;
+  bottom: 1.5em;
 }/*# sourceMappingURL=main.css.map */
