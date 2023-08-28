@@ -177,4 +177,36 @@ header nav ul li a {
   font-size: 2rem;
   text-align: center;
   color: #fff;
+}
+
+footer {
+  text-align: center;
+}
+footer .footer-section {
+  padding: 5em 0 2em;
+}
+footer .footer-section .links {
+  margin: 5em 0.5em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+footer .footer-section .links .link {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.2em;
+}
+footer .footer-section .links .link img {
+  width: 2em;
+}
+footer .footer-section .links .link a {
+  color: #fff;
+}
+footer .footer-section .links .link .link-name {
+  margin-top: -0.4em;
+}
+footer .footer-section p {
+  font: 1.3rem "Octosquare Condensed";
 }/*# sourceMappingURL=main.css.map */

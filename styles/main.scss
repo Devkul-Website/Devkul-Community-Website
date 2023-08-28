@@ -216,3 +216,43 @@ header {
     }
   }
 }
+
+// FOOTER-SECTION
+footer {
+  text-align: center;
+
+  .footer-section {
+    padding: 5em 0 2em;
+
+    .links {
+      margin: 5em 0.5em;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 4rem;
+
+      .link {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin-bottom: 1.2em;
+
+        img {
+          width: 2em;
+        }
+
+        a {
+          color: $white;
+        }
+
+        .link-name {
+          margin-top: -0.4em;
+        }
+      }
+    }
+
+    p {
+      font: 1.3rem $octo;
+    }
+  }
+}
