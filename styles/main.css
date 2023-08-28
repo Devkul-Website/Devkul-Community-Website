@@ -154,4 +154,27 @@ header nav ul li a {
 .about-section .work-img {
   display: flex;
   justify-content: center;
+}
+
+.resource-section .resources-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 5em 1em;
+}
+.resource-section .resources-link .resource {
+  max-width: 40em;
+  padding: 1em;
+  border: 2px solid #0f0;
+  border-radius: 1em;
+}
+.resource-section .resources-link .resource img {
+  max-width: 35em;
+}
+.resource-section .resources-link .resource h3 {
+  margin: 0.5em 0;
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */
