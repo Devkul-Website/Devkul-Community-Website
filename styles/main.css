@@ -14,7 +14,7 @@ body {
 
 img {
   width: 100%;
-  max-width: 400px;
+  max-width: 40em;
 }
 
 .container {
@@ -160,20 +160,22 @@ header nav ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  padding: 5em 1em;
+  gap: 3rem;
+  padding: 5em 3em;
 }
 .resource-section .resources-link .resource {
   max-width: 40em;
-  padding: 1em;
-  border: 2px solid #0f0;
-  border-radius: 1em;
+  padding: 1.5em;
+  border: 2px solid #fff;
+  border-radius: 3em;
 }
 .resource-section .resources-link .resource img {
+  display: block;
   max-width: 35em;
+  border-radius: 1em;
 }
 .resource-section .resources-link .resource h3 {
-  margin: 0.5em 0;
+  margin: 0.8em 0 0.5em;
   font-size: 2rem;
   text-align: center;
   color: #fff;
@@ -183,7 +185,7 @@ footer {
   text-align: center;
 }
 footer .footer-section {
-  padding: 5em 0 2em;
+  padding: 2em 0 2em;
 }
 footer .footer-section .links {
   margin: 5em 0.5em;
