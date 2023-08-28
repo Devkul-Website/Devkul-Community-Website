@@ -18,50 +18,172 @@
     <title>Devkul Community</title>
   </head>
   <body>
-    <div class="container">
-      <!-- HOME SECTION -->
-      <header>
-        <a href="#" class="logo-img">
-          <img class="logo" src="./assets/logo.png" alt="Devkul Logo" />
-        </a>
+    <!-- HOME SECTION -->
+    <header class="container">
+      <a href="#" class="logo-img">
+        <img class="logo" src="./assets/logo.png" alt="Devkul Logo" />
+      </a>
 
-        <!-- OPEN SVG -->
-        <img class="open" src="./assets/open.svg" alt="" />
+      <!-- OPEN SVG -->
+      <img class="open" src="./assets/open.svg" alt="" />
 
-        <nav>
-          <!-- CLOSE SVG -->
-          <img class="close" src="./assets/close.svg" alt="Close Svg" />
+      <nav>
+        <!-- CLOSE SVG -->
+        <img class="close" src="./assets/close.svg" alt="Close Svg" />
 
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Resources</a></li>
-            <!-- <li><a href="#">Contribute</a></li> -->
-            <li><a href="#">AI Help</a></li>
-          </ul>
-        </nav>
-      </header>
+        <ul>
+          <li><a href="#">AI Help</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Resources</a></li>
+          <li>
+            <a
+              href="https://github.com/Devkul-Website"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Contribute</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-      <!-- MAIN SECTION -->
-      <main>
-        <!-- HOME PAGE -->
-        <section class="home-sect">
+    <!-- MAIN SECTION -->
+    <main>
+      <!-- HOME PAGE -->
+      <section class="home-section">
+        <div class="container">
           <h1>DEVKUL</h1>
           <p>A Community made by learners for learners.</p>
-          <a class="cta" href="#">Join us</a>
+          <a class="cta" href="#join-us">Join us</a>
 
           <!-- DOWN ARROW SVG -->
-          <img
-            class="down-arrow"
-            src="./assets/down-arrow.svg"
-            alt="Down Arrow Svg"
-          />
-        </section>
-      </main>
+          <a href="#about-us">
+            <img
+              class="down-arrow"
+              src="./assets/down-arrow.svg"
+              alt="Down Arrow Svg"
+            />
+          </a>
+        </div>
+      </section>
 
-      <!-- FOOTER SECTION -->
-      <footer></footer>
-    </div>
+      <section id="about-us" class="about-section">
+        <div class="container about-sec-div">
+          <div class="about-txt">
+            <h2>About Us</h2>
+            <p>
+              Welcome to Devkul: Your Coding Community for Learning, Connecting,
+              and Contributing!
+            </p>
+            <p>
+              Join us at Devkul, where coding enthusiasts of all levels come
+              together to learn, connect, and make a difference. Dive into
+              diverse coding topics, collaborate on projects, and grow together.
+              Let's code, connect, and contribute with Devkul! Yes, yes we
+              copied it from Chat.
+            </p>
+          </div>
+
+          <div class="work-img">
+            <img
+              src="./assets/annie-spratt-QckxruozjRg-unsplash.jpg"
+              alt="Group Community"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- RESOURCES SECTION -->
+      <section id="resources" class="resource-section">
+        <div class="container resources-link">
+          <div class="resource">
+            <a href="">
+              <img
+                src="./assets/annie-spratt-QckxruozjRg-unsplash.jpg"
+                alt=""
+              />
+            </a>
+            <a href="">
+              <h3>Books</h3>
+            </a>
+          </div>
+
+          <div class="resource">
+            <a href="">
+              <img
+                src="./assets/annie-spratt-QckxruozjRg-unsplash.jpg"
+                alt=""
+              />
+            </a>
+            <a href="">
+              <h3>Websites</h3>
+            </a>
+          </div>
+
+          <div class="resource">
+            <a href="">
+              <img
+                src="./assets/annie-spratt-QckxruozjRg-unsplash.jpg"
+                alt=""
+              />
+            </a>
+            <a href="">
+              <h3>Question Banks</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer id="join-us">
+      <div class="container footer-section">
+        <h2>Connect with us</h2>
+        <div class="links">
+          <div class="col-1">
+            <div class="link">
+              <a href="">
+                <img src="./assets/linkdin.svg" alt="" />
+              </a>
+              <a class="link-name" href="">Linkdin</a>
+            </div>
+
+            <div class="link">
+              <a href="">
+                <img src="./assets/Twitter X Icon.svg" alt="" />
+              </a>
+              <a class="link-name" href="">Twitter</a>
+            </div>
+
+            <div class="link">
+              <a href="">
+                <img src="./assets/hashnode.svg" alt="" />
+              </a>
+              <a class="link-name" href="">Hashnode</a>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <div class="link">
+              <a href="">
+                <img src="./assets/yt.svg" alt="" />
+              </a>
+              <a class="link-name" href="">YouTube</a>
+            </div>
+
+            <div class="link">
+              <a href="">
+                <img src="./assets/github.svg" alt="" />
+              </a>
+              <a class="link-name" href="">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <p>&copy; All copyrights reserved by <span>Devkul</span>.</p>
+      </div>
+    </footer>
 
     <!-- SCRIPT -->
     <script>
