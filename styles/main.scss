@@ -15,12 +15,26 @@ body {
   margin: 0;
   background: $black;
   color: $white;
+  // scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1em;
+  padding: 1em;
+}
+
+h2 {
+  font: 4rem $octo;
+  text-align: center;
+}
+
+a {
+  font: 1.6rem $octo;
+  text-decoration: none;
 }
 
 // HEADER SECTION
@@ -31,14 +45,15 @@ header {
   padding: 1em 0;
 
   .logo {
-    width: 5em;
+    width: 3em;
   }
 
   .open {
     width: 3.5em;
     align-self: center;
-    margin-top: -5px;
+    margin-top: -1em;
     cursor: pointer;
+    vertical-align: middle;
   }
 
   nav {
@@ -70,9 +85,7 @@ header {
         text-align: center;
 
         a {
-          font: 1.6rem $octo;
           color: $black;
-          text-decoration: none;
           line-height: 2.5;
           letter-spacing: 0.08rem;
         }
@@ -87,13 +100,14 @@ header {
 }
 
 // MAIN SECTION
-.home-sect {
-  height: 80vh;
+.home-section {
+  min-height: 90vh;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2em;
 
   h1 {
     font: 5rem $glamor;
@@ -104,6 +118,7 @@ header {
     font: 2rem $octo;
     line-height: 1.5;
     margin-top: 0em;
+    margin-bottom: 2em;
   }
 
   .cta {
@@ -113,8 +128,8 @@ header {
     padding: 0.3em 1.8em;
     border: 0.2rem solid $white;
     color: $white;
-    margin-bottom: 6em;
     transition: all 0.15s ease-in-out;
+    margin-bottom: 8em;
 
     &:hover {
       background: $white;
@@ -123,10 +138,10 @@ header {
   }
 
   .down-arrow {
-    position: absolute;
-    width: 3em;
-    bottom: 1.5em;
-    animation: moveArrow 1s alternate-reverse infinite;
+    display: block;
+    width: 2.5em;
+    margin: 0 auto;
+    animation: moveArrow 0.8s alternate-reverse infinite;
 
     //DOWN ARROW
     @keyframes moveArrow {
@@ -138,5 +153,35 @@ header {
         transform: translateY(10px);
       }
     }
+  }
+}
+
+// ABOUT-SECTION
+.about-section {
+  background: $white;
+  padding: 2em 0 5em;
+
+  .about-txt {
+    color: $black;
+
+    h2 {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font: 1.5rem $octo;
+      margin-bottom: 1em;
+    }
+
+    p:last-child {
+      margin-bottom: 2em;
+    }
+  }
+
+  .work-img {
+    display: flex;
+    justify-content: center;
   }
 }

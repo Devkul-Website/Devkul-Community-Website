@@ -12,10 +12,23 @@ body {
   color: #fff;
 }
 
+img {
+  width: 100%;
+  max-width: 400px;
+}
+
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1em;
+  padding: 1em;
+}
+
+h2 {
+  font: 4rem "Octosquare Condensed";
+  text-align: center;
+}
+
+a {
+  font: 1.6rem "Octosquare Condensed";
+  text-decoration: none;
 }
 
 header {
@@ -25,13 +38,14 @@ header {
   padding: 1em 0;
 }
 header .logo {
-  width: 5em;
+  width: 3em;
 }
 header .open {
   width: 3.5em;
   align-self: center;
-  margin-top: -5px;
+  margin-top: -1em;
   cursor: pointer;
+  vertical-align: middle;
 }
 header nav {
   background: #fff;
@@ -61,9 +75,7 @@ header nav ul li {
   text-align: center;
 }
 header nav ul li a {
-  font: 1.6rem "Octosquare Condensed";
   color: #000;
-  text-decoration: none;
   line-height: 2.5;
   letter-spacing: 0.08rem;
 }
@@ -72,42 +84,44 @@ header nav ul li a {
   transform: translateX(0%);
 }
 
-.home-sect {
-  height: 80vh;
+.home-section {
+  min-height: 90vh;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2em;
 }
-.home-sect h1 {
+.home-section h1 {
   font: 5rem "Glamor Bold";
   margin-bottom: 0;
 }
-.home-sect p {
+.home-section p {
   font: 2rem "Octosquare Condensed";
   line-height: 1.5;
   margin-top: 0em;
+  margin-bottom: 2em;
 }
-.home-sect .cta {
+.home-section .cta {
   display: inline-block;
   text-decoration: none;
   font: 1.5rem "Octosquare Condensed";
   padding: 0.3em 1.8em;
   border: 0.2rem solid #fff;
   color: #fff;
-  margin-bottom: 6em;
   transition: all 0.15s ease-in-out;
+  margin-bottom: 8em;
 }
-.home-sect .cta:hover {
+.home-section .cta:hover {
   background: #fff;
   color: #000;
 }
-.home-sect .down-arrow {
-  position: absolute;
-  width: 3em;
-  bottom: 1.5em;
-  animation: moveArrow 1s alternate-reverse infinite;
+.home-section .down-arrow {
+  display: block;
+  width: 2.5em;
+  margin: 0 auto;
+  animation: moveArrow 0.8s alternate-reverse infinite;
 }
 @keyframes moveArrow {
   from {
@@ -116,4 +130,28 @@ header nav ul li a {
   to {
     transform: translateY(10px);
   }
+}
+
+.about-section {
+  background: #fff;
+  padding: 2em 0 5em;
+}
+.about-section .about-txt {
+  color: #000;
+}
+.about-section .about-txt h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+.about-section .about-txt p {
+  font: 1.5rem "Octosquare Condensed";
+  margin-bottom: 1em;
+}
+.about-section .about-txt p:last-child {
+  margin-bottom: 2em;
+}
+.about-section .work-img {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */
