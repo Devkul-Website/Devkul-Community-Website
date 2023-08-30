@@ -11,6 +11,7 @@ body {
   background: #000;
   color: #fff;
   font-family: "Octosquare Condensed";
+  scroll-behavior: smooth;
 }
 
 img {
@@ -20,6 +21,11 @@ img {
 
 .container {
   padding: 1em;
+}
+
+.white-bg {
+  background: #fff;
+  color: #000;
 }
 
 h2 {
@@ -103,7 +109,7 @@ header nav ul li a {
   margin-bottom: 0;
 }
 .home-section p {
-  font: 2rem "Octosquare Condensed";
+  font-size: 2rem;
   line-height: 1.5;
   margin-top: 0em;
   margin-bottom: 2em;
@@ -116,7 +122,7 @@ header nav ul li a {
   border: 0.2rem solid #fff;
   color: #fff;
   transition: all 0.15s ease-in-out;
-  margin-bottom: 8em;
+  margin-bottom: 4em;
 }
 .home-section .cta:hover {
   background: #fff;
@@ -126,45 +132,45 @@ header nav ul li a {
   display: block;
   width: 2.5em;
   margin: 0 auto;
-  animation: moveArrow 0.8s alternate-reverse infinite;
+  animation: moveArrow 0.9s alternate-reverse infinite;
 }
 @keyframes moveArrow {
   from {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
   }
   to {
     transform: translateY(10px);
   }
 }
 
-.events-section {
-  background: #fff;
-}
-.events-section .events-link {
+/********----
+ COMBINATION OF RESOURCE SECTION AND EVENT SECTION
+----********/
+.flex-boxes .flex-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3rem;
   padding: 3em 3em 5em;
 }
-.events-section .events-link h2 {
+.flex-boxes .flex-box h2 {
   color: #000;
   margin: 0;
 }
-.events-section .events-link .event {
+.flex-boxes .flex-box .box {
   max-width: 40em;
   padding: 1.5em;
   border: 2px solid #000;
   border-radius: 3em;
 }
-.events-section .events-link .event img {
+.flex-boxes .flex-box .box img {
   display: block;
   max-width: 35rem;
   min-height: 5em;
   min-height: 1em;
   border-radius: 1em;
 }
-.events-section .events-link .event h3 {
+.flex-boxes .flex-box .box h3 {
   margin: 0.8em 0 0.5em;
   font-size: 2rem;
   text-align: center;
@@ -184,7 +190,7 @@ header nav ul li a {
   margin-bottom: 0.5em;
 }
 .about-section .about-txt p {
-  font: 1.5rem "Octosquare Condensed";
+  font-size: 1.5rem;
   margin-bottom: 1em;
 }
 .about-section .about-txt p:last-child {
@@ -193,40 +199,6 @@ header nav ul li a {
 .about-section .work-img {
   display: flex;
   justify-content: center;
-}
-
-.resource-section {
-  background: #fff;
-}
-.resource-section .resources-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-  padding: 3em 3em 5em;
-}
-.resource-section .resources-link h2 {
-  color: #000;
-  margin: 0;
-}
-.resource-section .resources-link .resource {
-  max-width: 40em;
-  padding: 1.5em;
-  border: 2px solid #000;
-  border-radius: 3em;
-}
-.resource-section .resources-link .resource img {
-  display: block;
-  max-width: 35rem;
-  min-height: 5em;
-  min-height: 1em;
-  border-radius: 1em;
-}
-.resource-section .resources-link .resource h3 {
-  margin: 0.8em 0 0.5em;
-  font-size: 2rem;
-  text-align: center;
-  color: #000;
 }
 
 .team-section {
@@ -275,12 +247,10 @@ header nav ul li a {
 }
 
 footer {
-  background: #fff;
   text-align: center;
 }
 footer .footer-section {
   padding: 2em 0.5em 1em;
-  color: #000;
 }
 footer .footer-section .links {
   margin: 5em 0.5em;
@@ -325,5 +295,5 @@ footer .footer-section .links .link .twitter {
   padding-top: 0.42em;
 }
 footer .footer-section p {
-  font: 1.3rem "Octosquare Condensed";
+  font-size: 1.3rem;
 }/*# sourceMappingURL=main.css.map */

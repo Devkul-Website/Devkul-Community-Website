@@ -16,7 +16,7 @@ body {
   background: $black;
   color: $white;
   font-family: $octo;
-  // scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -26,6 +26,11 @@ img {
 
 .container {
   padding: 1em;
+}
+
+.white-bg {
+  background: $white;
+  color: $black;
 }
 
 h2 {
@@ -120,7 +125,7 @@ header {
   }
 
   p {
-    font: 2rem $octo;
+    font-size: 2rem;
     line-height: 1.5;
     margin-top: 0em;
     margin-bottom: 2em;
@@ -134,7 +139,7 @@ header {
     border: 0.2rem solid $white;
     color: $white;
     transition: all 0.15s ease-in-out;
-    margin-bottom: 8em;
+    margin-bottom: 4em;
 
     &:hover {
       background: $white;
@@ -146,12 +151,12 @@ header {
     display: block;
     width: 2.5em;
     margin: 0 auto;
-    animation: moveArrow 0.8s alternate-reverse infinite;
+    animation: moveArrow 0.9s alternate-reverse infinite;
 
     //DOWN ARROW
     @keyframes moveArrow {
       from {
-        transform: translateY(-8px);
+        transform: translateY(-10px);
       }
 
       to {
@@ -161,11 +166,11 @@ header {
   }
 }
 
-// EVENTS-SECTION
-.events-section {
-  background: $white;
-
-  .events-link {
+/********----
+ COMBINATION OF RESOURCE SECTION AND EVENT SECTION
+----********/
+.flex-boxes {
+  .flex-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,7 +182,7 @@ header {
       margin: 0;
     }
 
-    .event {
+    .box {
       max-width: 40em;
       padding: 1.5em;
       border: 2px solid $black;
@@ -201,7 +206,7 @@ header {
   }
 }
 
-// ABOUT-SECTION
+// WHO-ARE-WE SECTION
 .about-section {
   background: $black;
   padding: 2em 0 5em;
@@ -216,7 +221,7 @@ header {
     }
 
     p {
-      font: 1.5rem $octo;
+      font-size: 1.5rem;
       margin-bottom: 1em;
     }
 
@@ -228,46 +233,6 @@ header {
   .work-img {
     display: flex;
     justify-content: center;
-  }
-}
-
-// RESOURCE SECTION
-.resource-section {
-  background: $white;
-
-  .resources-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-    padding: 3em 3em 5em;
-
-    h2 {
-      color: $black;
-      margin: 0;
-    }
-
-    .resource {
-      max-width: 40em;
-      padding: 1.5em;
-      border: 2px solid $black;
-      border-radius: 3em;
-
-      img {
-        display: block;
-        max-width: 35rem;
-        min-height: 5em;
-        min-height: 1em;
-        border-radius: 1em;
-      }
-
-      h3 {
-        margin: 0.8em 0 0.5em;
-        font-size: 2rem;
-        text-align: center;
-        color: $black;
-      }
-    }
   }
 }
 
@@ -285,8 +250,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    // background: $white;
-    // border: 3px solid #d2ff57;
     border: 3px solid $white;
     border-radius: 1em;
     max-width: 38em;
@@ -326,12 +289,10 @@ header {
 
 // FOOTER-SECTION
 footer {
-  background: $white;
   text-align: center;
 
   .footer-section {
     padding: 2em 0.5em 1em;
-    color: $black;
 
     .links {
       margin: 5em 0.5em;
@@ -386,7 +347,7 @@ footer {
     }
 
     p {
-      font: 1.3rem $octo;
+      font-size: 1.3rem;
     }
   }
 }
