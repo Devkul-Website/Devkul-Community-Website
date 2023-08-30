@@ -137,12 +137,46 @@ header nav ul li a {
   }
 }
 
-.about-section {
+.events-section {
   background: #fff;
+}
+.events-section .events-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 3em 3em 5em;
+}
+.events-section .events-link h2 {
+  color: #000;
+  margin: 0;
+}
+.events-section .events-link .event {
+  max-width: 40em;
+  padding: 1.5em;
+  border: 2px solid #000;
+  border-radius: 3em;
+}
+.events-section .events-link .event img {
+  display: block;
+  max-width: 35rem;
+  min-height: 5em;
+  min-height: 1em;
+  border-radius: 1em;
+}
+.events-section .events-link .event h3 {
+  margin: 0.8em 0 0.5em;
+  font-size: 2rem;
+  text-align: center;
+  color: #000;
+}
+
+.about-section {
+  background: #000;
   padding: 2em 0 5em;
 }
 .about-section .about-txt {
-  color: #000;
+  color: #fff;
 }
 .about-section .about-txt h2 {
   text-align: center;
@@ -161,6 +195,9 @@ header nav ul li a {
   justify-content: center;
 }
 
+.resource-section {
+  background: #fff;
+}
 .resource-section .resources-link {
   display: flex;
   flex-direction: column;
@@ -169,12 +206,13 @@ header nav ul li a {
   padding: 3em 3em 5em;
 }
 .resource-section .resources-link h2 {
+  color: #000;
   margin: 0;
 }
 .resource-section .resources-link .resource {
   max-width: 40em;
   padding: 1.5em;
-  border: 2px solid #fff;
+  border: 2px solid #000;
   border-radius: 3em;
 }
 .resource-section .resources-link .resource img {
@@ -188,34 +226,30 @@ header nav ul li a {
   margin: 0.8em 0 0.5em;
   font-size: 2rem;
   text-align: center;
-  color: #fff;
+  color: #000;
 }
 
 .team-section {
-  background: #fff;
+  background: #000;
   padding: 2em;
 }
 .team-section h2 {
-  color: #000;
+  color: #fff;
   margin: 0 0 0.7em;
 }
 .team-section .member-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 3px solid #000;
+  border: 3px solid #fff;
   border-radius: 1em;
-  max-width: 35em;
+  max-width: 38em;
   margin: 0 auto 2em;
   padding: 2em;
-  color: #000;
-}
-.team-section .member-info:hover {
-  background-color: #fff;
-  color: #000;
+  color: #fff;
 }
 .team-section .member-info .user-img {
-  border: 3px solid #000;
+  border: 3px solid #fff;
   padding: 0.3em;
   height: 12.5em;
   max-width: 12.5em;
@@ -236,37 +270,59 @@ header nav ul li a {
   width: 50px;
   height: 50px;
 }
-.team-section .member-info .connect-links .linkdin-dark {
+.team-section .member-info .connect-links .linkedin-dark {
   width: 45px;
 }
 
 footer {
+  background: #fff;
   text-align: center;
 }
 footer .footer-section {
-  padding: 2em 0 2em;
+  padding: 2em 0.5em 1em;
+  color: #000;
 }
 footer .footer-section .links {
   margin: 5em 0.5em;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 4rem;
 }
 footer .footer-section .links .link {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  margin-bottom: 1.2em;
+  gap: 0.5rem;
+  margin-bottom: 1.5em;
+}
+footer .footer-section .links .link a {
+  width: 3em;
 }
 footer .footer-section .links .link img {
   width: 2em;
 }
-footer .footer-section .links .link a {
-  color: #fff;
+footer .footer-section .links .link .linkedin-svg {
+  width: 2.5em;
+}
+footer .footer-section .links .link .tweet-svg {
+  flex: 1;
+  width: 3em;
+  height: 2.5em;
+}
+footer .footer-section .links .link .img-link {
+  align-self: center;
 }
 footer .footer-section .links .link .link-name {
-  margin-top: -0.4em;
+  align-self: self-start;
+  color: #000;
+  padding-top: 0.2em;
+}
+footer .footer-section .links .link .linkedin {
+  padding-top: 0.5em;
+}
+footer .footer-section .links .link .twitter {
+  padding-top: 0.42em;
 }
 footer .footer-section p {
   font: 1.3rem "Octosquare Condensed";

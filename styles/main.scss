@@ -161,13 +161,53 @@ header {
   }
 }
 
+// EVENTS-SECTION
+.events-section {
+  background: $white;
+
+  .events-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 3em 3em 5em;
+
+    h2 {
+      color: $black;
+      margin: 0;
+    }
+
+    .event {
+      max-width: 40em;
+      padding: 1.5em;
+      border: 2px solid $black;
+      border-radius: 3em;
+
+      img {
+        display: block;
+        max-width: 35rem;
+        min-height: 5em;
+        min-height: 1em;
+        border-radius: 1em;
+      }
+
+      h3 {
+        margin: 0.8em 0 0.5em;
+        font-size: 2rem;
+        text-align: center;
+        color: $black;
+      }
+    }
+  }
+}
+
 // ABOUT-SECTION
 .about-section {
-  background: $white;
+  background: $black;
   padding: 2em 0 5em;
 
   .about-txt {
-    color: $black;
+    color: $white;
 
     h2 {
       text-align: center;
@@ -193,6 +233,8 @@ header {
 
 // RESOURCE SECTION
 .resource-section {
+  background: $white;
+
   .resources-link {
     display: flex;
     flex-direction: column;
@@ -201,13 +243,14 @@ header {
     padding: 3em 3em 5em;
 
     h2 {
+      color: $black;
       margin: 0;
     }
 
     .resource {
       max-width: 40em;
       padding: 1.5em;
-      border: 2px solid $white;
+      border: 2px solid $black;
       border-radius: 3em;
 
       img {
@@ -222,7 +265,7 @@ header {
         margin: 0.8em 0 0.5em;
         font-size: 2rem;
         text-align: center;
-        color: $white;
+        color: $black;
       }
     }
   }
@@ -230,11 +273,11 @@ header {
 
 // TEAM-MEMBERS-SECTION
 .team-section {
-  background: $white;
+  background: $black;
   padding: 2em;
 
   h2 {
-    color: $black;
+    color: $white;
     margin: 0 0 0.7em;
   }
 
@@ -242,20 +285,17 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 3px solid $black;
+    // background: $white;
+    // border: 3px solid #d2ff57;
+    border: 3px solid $white;
     border-radius: 1em;
-    max-width: 35em;
+    max-width: 38em;
     margin: 0 auto 2em;
     padding: 2em;
-    color: $black;
-
-    &:hover {
-      background-color: #fff;
-      color: #000;
-    }
+    color: $white;
 
     .user-img {
-      border: 3px solid $black;
+      border: 3px solid $white;
       padding: 0.3em;
       height: 12.5em;
       max-width: 12.5em;
@@ -277,7 +317,7 @@ header {
         height: 50px;
       }
 
-      .linkdin-dark {
+      .linkedin-dark {
         width: 45px;
       }
     }
@@ -286,34 +326,61 @@ header {
 
 // FOOTER-SECTION
 footer {
+  background: $white;
   text-align: center;
 
   .footer-section {
-    padding: 2em 0 2em;
+    padding: 2em 0.5em 1em;
+    color: $black;
 
     .links {
       margin: 5em 0.5em;
       display: flex;
       justify-content: center;
+      align-items: center;
       flex-wrap: wrap;
       gap: 4rem;
 
       .link {
         display: flex;
         align-items: center;
-        gap: 1.5rem;
-        margin-bottom: 1.2em;
+        gap: 0.5rem;
+        margin-bottom: 1.5em;
+
+        a {
+          width: 3em;
+        }
 
         img {
           width: 2em;
         }
 
-        a {
-          color: $white;
+        .linkedin-svg {
+          width: 2.5em;
+        }
+
+        .tweet-svg {
+          flex: 1;
+          width: 3em;
+          height: 2.5em;
+        }
+
+        .img-link {
+          align-self: center;
         }
 
         .link-name {
-          margin-top: -0.4em;
+          align-self: self-start;
+          color: $black;
+          padding-top: 0.2em;
+        }
+
+        .linkedin {
+          padding-top: 0.5em;
+        }
+
+        .twitter {
+          padding-top: 0.42em;
         }
       }
     }
