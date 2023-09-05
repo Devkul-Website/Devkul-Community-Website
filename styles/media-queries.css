@@ -1,0 +1,15 @@
+@media only screen and (min-width: 700px) {
+  .open,
+  .close {
+    display: none;
+  }
+
+  nav {
+    position: unset;
+    transform: translateX(0);
+    display: block;
+    background: none;
+    width: auto;
+    height: auto;
+  }
+}
